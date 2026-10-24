@@ -1,0 +1,77 @@
+/* 1. SELECTOR ELEMEN
+   Pengaturan dasar seluruh halaman */
+
+body {
+    font-family: Arial, sans-serif;  
+    background-color: #f1f5f9;    /* warna HEX */
+    color: #000000;         
+    line-height: 1.6;
+   
+}
+
+/* 2. SELECTOR ID
+   Kotak utama: lebar tetap dan berada di tengah halaman */
+#profil-saya {
+   width: 380px;                   /* lebar sama */
+   margin: 40px auto;             /* auto kanan kiri tetap di tengah */
+   padding: 24px;                 /* ruang di dalam kotak */
+   background-color: #ffffff;  
+   border: 2px solid #cbd5e1;
+   border-radius: 12px;            /* sudut kotak bulat */
+
+  }
+/* Selector ID untuk nama (elemen unik) */
+  #nama {
+  text-transform: capitalize;                /* huruf awal tiap kata kapital pada nama judul */
+}
+
+/*3. SELECTOR GRUP
+   mengatur warna judul h1 dan h2 */
+h1, h2 {
+  color:#1e3a8a;
+}
+ 
+/* Mengatur ukuran font dan posisi teks */
+h1 { color: #1e3a8a; font-size: 2rem; text-align: center; }
+h2 { font-size: 1.2rem; margin-top: 24px; }
+    
+/* 4. SELECTOR CLASS: mengatur tampilan jueusan */
+.jurusan{
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: px;
+    }
+
+/* Mengatur ukuran font dan warna pada teknologi informasi */
+   .info { font-size: 14px; color: #64748b; }
+
+/* 5. DAFTAR KEAHLIAN */
+.keahlian {
+    list-style: none;
+    padding: 0;
+}
+
+/* SELECTOR TURUNAN (DESCENDANT): hanya <li> di dalam .keahlian
+   display: inline-block #1 -> label keahlian sebaris, tapi bisa diberi padding */
+.keahlian li {
+    display: inline-block;
+    margin: 4px;
+    padding: 4px 14px;
+    background-color: rgba(37, 99, 235, 0.15);  /* warna RGBA (transparan) */
+    border-radius: 1px;
+}
+
+/* 6. TOMBOL: mengatur posisi tombol di tengah */
+.aksi { text-align: center; }
+
+/* display: inline-block -> mengatur tampilantombol */
+.tombol {
+   display: inline-block;
+   margin-top: 12px;
+   padding: 10px 20px;
+   background-color: #2563eb;    /* warna HEX */
+   color: #ffffff;
+   text-decoration: none;
+   border-radius: 6px;
+   }
